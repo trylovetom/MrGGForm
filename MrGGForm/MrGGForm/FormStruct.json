@@ -1,0 +1,124 @@
+{
+  "id": "formID1",
+  "title": "formTitle",
+  "sections": [
+    {
+      "id": "sectionID1",
+      "title": "sectionTitle",
+      "description": "sectionDescription",
+      "question": [
+        {
+          "id": "questionID1",
+          "title": "questionTitle",
+          "type": "shortAnswer",
+          "placeholder": "placeholder",
+          "required": true
+        },
+        {
+          "id": "questionID2",
+          "title": "questionTitle",
+          "type": "paragraph",
+          "placeholder": "placeholder",
+          "required": false
+        },
+        {
+          "id": "questionID3",
+          "title": "questionTitle",
+          "type": "checkBoxes",
+          "value": [
+            "buttonTitle1",
+            "buttonTitle2"
+          ],
+          "required": true
+        },
+        {
+          "id": "questionID4",
+          "title": "questionTitle",
+          "type": "multipleChoice",
+          "value": [
+            "buttonTitle1",
+            "buttonTitle2"
+          ],
+          "required": true
+        },
+        {
+          "id": "questionID5",
+          "title": "questionTitle",
+          "type": "dropDown",
+          "value": [
+            "buttonTitle1",
+            "buttonTitle2"
+          ],
+          "required": true
+        },
+        {
+          "id": "questionID6",
+          "title": "questionTitle",
+          "type": "linearScale",
+          "maxValue": 5,
+          "minValue": 0,
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "sectionID1",
+      "title": "sectionTitle",
+      "description": "sectionDescription",
+      "question": [
+        {
+          "id": "questionID1",
+          "title": "questionTitle",
+          "type": "shortAnswer",
+          "placeholder": "placeholder",
+          "required": true
+        },
+        {
+          "id": "questionID2",
+          "title": "questionTitle",
+          "type": "paragraph",
+          "placeholder": "placeholder",
+          "required": false
+        },
+        {
+          "id": "questionID3",
+          "title": "questionTitle",
+          "type": "checkBoxes",
+          "value": [
+            "buttonTitle1",
+            "buttonTitle2"
+          ],
+          "required": true
+        },
+        {
+          "id": "questionID4",
+          "title": "questionTitle",
+          "type": "multipleChoice",
+          "value": [
+            "buttonTitle1",
+            "buttonTitle2"
+          ],
+          "required": true
+        },
+        {
+          "id": "questionID5",
+          "title": "questionTitle",
+          "type": "dropDown",
+          "value": [
+            "buttonTitle1",
+            "buttonTitle2"
+          ],
+          "required": true
+        },
+        {
+          "id": "questionID6",
+          "title": "questionTitle",
+          "type": "linearScale",
+          "maxValue": 5,
+          "minValue": 0,
+          "required": true
+        }
+      ]
+    }
+  ]
+}
