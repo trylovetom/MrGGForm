@@ -1,0 +1,6 @@
+framework module Pods_MrGGFormTests {
+  umbrella header "Pods-MrGGFormTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

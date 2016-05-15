@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24405C0E4549D5BAB9AD80B5 /* Pods_MrGGForm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D3E3806E6B89E8BD2FE2E0 /* Pods_MrGGForm.framework */; };
+		262EF711CB804C534FDE9A13 /* Pods_MrGGFormTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C6DE7BC8BEA612AB5ED341D /* Pods_MrGGFormTests.framework */; };
 		4E692ABC1CE852BA0019316C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E692ABB1CE852BA0019316C /* AppDelegate.swift */; };
 		4E692AC11CE852BA0019316C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E692ABF1CE852BA0019316C /* Main.storyboard */; };
 		4E692AC41CE852BA0019316C /* MrGGForm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4E692AC21CE852BA0019316C /* MrGGForm.xcdatamodeld */; };
@@ -14,6 +16,7 @@
 		4E692AC91CE852BA0019316C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E692AC71CE852BA0019316C /* LaunchScreen.storyboard */; };
 		4E692AD41CE852BB0019316C /* MrGGFormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E692AD31CE852BB0019316C /* MrGGFormTests.swift */; };
 		4E692ADF1CE852BB0019316C /* MrGGFormUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E692ADE1CE852BB0019316C /* MrGGFormUITests.swift */; };
+		C1A21C2C796F3B73AA8B6B09 /* Pods_MrGGFormUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4490240404E846883C106A9 /* Pods_MrGGFormUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0721A621350A05707A51A1F4 /* Pods-MrGGFormUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MrGGFormUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MrGGFormUITests/Pods-MrGGFormUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4E692AB81CE852BA0019316C /* MrGGForm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MrGGForm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E692ABB1CE852BA0019316C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E692AC01CE852BA0019316C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -47,6 +51,14 @@
 		4E692ADA1CE852BB0019316C /* MrGGFormUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MrGGFormUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E692ADE1CE852BB0019316C /* MrGGFormUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrGGFormUITests.swift; sourceTree = "<group>"; };
 		4E692AE01CE852BB0019316C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C6DE7BC8BEA612AB5ED341D /* Pods_MrGGFormTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MrGGFormTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20CCAA357DC8E54B0207797 /* Pods-MrGGFormTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MrGGFormTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MrGGFormTests/Pods-MrGGFormTests.release.xcconfig"; sourceTree = "<group>"; };
+		C7D3E3806E6B89E8BD2FE2E0 /* Pods_MrGGForm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MrGGForm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0D5A0C6D9101D389DD11B1C /* Pods-MrGGForm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MrGGForm.release.xcconfig"; path = "Pods/Target Support Files/Pods-MrGGForm/Pods-MrGGForm.release.xcconfig"; sourceTree = "<group>"; };
+		D4490240404E846883C106A9 /* Pods_MrGGFormUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MrGGFormUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5B4EA87F8C688CEE24FB603 /* Pods-MrGGFormUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MrGGFormUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MrGGFormUITests/Pods-MrGGFormUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F11D9EEBBBE286DFEB5DD5E0 /* Pods-MrGGForm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MrGGForm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MrGGForm/Pods-MrGGForm.debug.xcconfig"; sourceTree = "<group>"; };
+		F5F9A0A2A92A2EF42AC8D5E1 /* Pods-MrGGFormTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MrGGFormTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MrGGFormTests/Pods-MrGGFormTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24405C0E4549D5BAB9AD80B5 /* Pods_MrGGForm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				262EF711CB804C534FDE9A13 /* Pods_MrGGFormTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1A21C2C796F3B73AA8B6B09 /* Pods_MrGGFormUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,8 @@
 				4E692AD21CE852BB0019316C /* MrGGFormTests */,
 				4E692ADD1CE852BB0019316C /* MrGGFormUITests */,
 				4E692AB91CE852BA0019316C /* Products */,
+				C175192F25875BDDAD8309CB /* Pods */,
+				C5703BE5EA6AADF360B65796 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +142,29 @@
 			path = MrGGFormUITests;
 			sourceTree = "<group>";
 		};
+		C175192F25875BDDAD8309CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F11D9EEBBBE286DFEB5DD5E0 /* Pods-MrGGForm.debug.xcconfig */,
+				D0D5A0C6D9101D389DD11B1C /* Pods-MrGGForm.release.xcconfig */,
+				F5F9A0A2A92A2EF42AC8D5E1 /* Pods-MrGGFormTests.debug.xcconfig */,
+				A20CCAA357DC8E54B0207797 /* Pods-MrGGFormTests.release.xcconfig */,
+				0721A621350A05707A51A1F4 /* Pods-MrGGFormUITests.debug.xcconfig */,
+				D5B4EA87F8C688CEE24FB603 /* Pods-MrGGFormUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C5703BE5EA6AADF360B65796 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7D3E3806E6B89E8BD2FE2E0 /* Pods_MrGGForm.framework */,
+				7C6DE7BC8BEA612AB5ED341D /* Pods_MrGGFormTests.framework */,
+				D4490240404E846883C106A9 /* Pods_MrGGFormUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E692AE31CE852BB0019316C /* Build configuration list for PBXNativeTarget "MrGGForm" */;
 			buildPhases = (
+				749A2EB235ADF0C89A1F7170 /* 📦 Check Pods Manifest.lock */,
 				4E692AB41CE852BA0019316C /* Sources */,
 				4E692AB51CE852BA0019316C /* Frameworks */,
 				4E692AB61CE852BA0019316C /* Resources */,
+				B9C1096DBF4A1FA101289AF5 /* 📦 Embed Pods Frameworks */,
+				AD604F5B971B06A1E96F4A07 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E692AE61CE852BB0019316C /* Build configuration list for PBXNativeTarget "MrGGFormTests" */;
 			buildPhases = (
+				6855A49AE9B9CE68ED7AA352 /* 📦 Check Pods Manifest.lock */,
 				4E692ACB1CE852BB0019316C /* Sources */,
 				4E692ACC1CE852BB0019316C /* Frameworks */,
 				4E692ACD1CE852BB0019316C /* Resources */,
+				F1560B47E92208A3D9D54796 /* 📦 Embed Pods Frameworks */,
+				AE90B5CB294178ABCA9F3AD3 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E692AE91CE852BB0019316C /* Build configuration list for PBXNativeTarget "MrGGFormUITests" */;
 			buildPhases = (
+				25A251ADB023E0E1517C957A /* 📦 Check Pods Manifest.lock */,
 				4E692AD61CE852BB0019316C /* Sources */,
 				4E692AD71CE852BB0019316C /* Frameworks */,
 				4E692AD81CE852BB0019316C /* Resources */,
+				C0923DD819C49C2CF64662CC /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +298,129 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25A251ADB023E0E1517C957A /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6855A49AE9B9CE68ED7AA352 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		749A2EB235ADF0C89A1F7170 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AD604F5B971B06A1E96F4A07 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MrGGForm/Pods-MrGGForm-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE90B5CB294178ABCA9F3AD3 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MrGGFormTests/Pods-MrGGFormTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9C1096DBF4A1FA101289AF5 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MrGGForm/Pods-MrGGForm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0923DD819C49C2CF64662CC /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MrGGFormUITests/Pods-MrGGFormUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1560B47E92208A3D9D54796 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MrGGFormTests/Pods-MrGGFormTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4E692AB41CE852BA0019316C /* Sources */ = {
@@ -399,6 +570,7 @@
 		};
 		4E692AE41CE852BB0019316C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F11D9EEBBBE286DFEB5DD5E0 /* Pods-MrGGForm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MrGGForm/Info.plist;
@@ -410,6 +582,7 @@
 		};
 		4E692AE51CE852BB0019316C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0D5A0C6D9101D389DD11B1C /* Pods-MrGGForm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MrGGForm/Info.plist;
@@ -421,6 +594,7 @@
 		};
 		4E692AE71CE852BB0019316C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5F9A0A2A92A2EF42AC8D5E1 /* Pods-MrGGFormTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = MrGGFormTests/Info.plist;
@@ -433,6 +607,7 @@
 		};
 		4E692AE81CE852BB0019316C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A20CCAA357DC8E54B0207797 /* Pods-MrGGFormTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = MrGGFormTests/Info.plist;
@@ -445,6 +620,7 @@
 		};
 		4E692AEA1CE852BB0019316C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0721A621350A05707A51A1F4 /* Pods-MrGGFormUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = MrGGFormUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -456,6 +632,7 @@
 		};
 		4E692AEB1CE852BB0019316C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5B4EA87F8C688CEE24FB603 /* Pods-MrGGFormUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = MrGGFormUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -484,6 +661,7 @@
 				4E692AE51CE852BB0019316C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4E692AE61CE852BB0019316C /* Build configuration list for PBXNativeTarget "MrGGFormTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +670,7 @@
 				4E692AE81CE852BB0019316C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4E692AE91CE852BB0019316C /* Build configuration list for PBXNativeTarget "MrGGFormUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +679,7 @@
 				4E692AEB1CE852BB0019316C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
