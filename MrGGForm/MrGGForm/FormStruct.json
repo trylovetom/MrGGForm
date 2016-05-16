@@ -6,7 +6,7 @@
       "id": "sectionID1",
       "title": "sectionTitle",
       "description": "sectionDescription",
-      "question": [
+      "questions": [
         {
           "id": "questionID1",
           "title": "questionTitle",
@@ -25,7 +25,7 @@
           "id": "questionID3",
           "title": "questionTitle",
           "type": "checkBoxes",
-          "value": [
+          "values": [
             "buttonTitle1",
             "buttonTitle2"
           ],
@@ -35,7 +35,7 @@
           "id": "questionID4",
           "title": "questionTitle",
           "type": "multipleChoice",
-          "value": [
+          "values": [
             "buttonTitle1",
             "buttonTitle2"
           ],
@@ -45,7 +45,7 @@
           "id": "questionID5",
           "title": "questionTitle",
           "type": "dropDown",
-          "value": [
+          "values": [
             "buttonTitle1",
             "buttonTitle2"
           ],
@@ -65,7 +65,7 @@
       "id": "sectionID1",
       "title": "sectionTitle",
       "description": "sectionDescription",
-      "question": [
+      "questions": [
         {
           "id": "questionID1",
           "title": "questionTitle",
@@ -84,7 +84,7 @@
           "id": "questionID3",
           "title": "questionTitle",
           "type": "checkBoxes",
-          "value": [
+          "values": [
             "buttonTitle1",
             "buttonTitle2"
           ],
@@ -94,7 +94,7 @@
           "id": "questionID4",
           "title": "questionTitle",
           "type": "multipleChoice",
-          "value": [
+          "values": [
             "buttonTitle1",
             "buttonTitle2"
           ],
@@ -104,7 +104,7 @@
           "id": "questionID5",
           "title": "questionTitle",
           "type": "dropDown",
-          "value": [
+          "values": [
             "buttonTitle1",
             "buttonTitle2"
           ],

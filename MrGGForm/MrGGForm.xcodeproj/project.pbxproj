@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		24405C0E4549D5BAB9AD80B5 /* Pods_MrGGForm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D3E3806E6B89E8BD2FE2E0 /* Pods_MrGGForm.framework */; };
 		262EF711CB804C534FDE9A13 /* Pods_MrGGFormTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C6DE7BC8BEA612AB5ED341D /* Pods_MrGGFormTests.framework */; };
+		4E2DC1461CE99B6000AB5841 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2DC1451CE99B6000AB5841 /* Section.swift */; };
 		4E692ABC1CE852BA0019316C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E692ABB1CE852BA0019316C /* AppDelegate.swift */; };
 		4E692AC11CE852BA0019316C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E692ABF1CE852BA0019316C /* Main.storyboard */; };
 		4E692AC41CE852BA0019316C /* MrGGForm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4E692AC21CE852BA0019316C /* MrGGForm.xcdatamodeld */; };
@@ -16,6 +17,11 @@
 		4E692AC91CE852BA0019316C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E692AC71CE852BA0019316C /* LaunchScreen.storyboard */; };
 		4E692AD41CE852BB0019316C /* MrGGFormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E692AD31CE852BB0019316C /* MrGGFormTests.swift */; };
 		4E692ADF1CE852BB0019316C /* MrGGFormUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E692ADE1CE852BB0019316C /* MrGGFormUITests.swift */; };
+		4E98FE501CE8F2AE002F1F95 /* MrGGFormParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E98FE4F1CE8F2AE002F1F95 /* MrGGFormParser.swift */; };
+		4E98FE521CE8F3B1002F1F95 /* FormStruct.json in Resources */ = {isa = PBXBuildFile; fileRef = 4E98FE511CE8F3B1002F1F95 /* FormStruct.json */; };
+		4E98FE551CE8F945002F1F95 /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E98FE541CE8F945002F1F95 /* Form.swift */; };
+		4E98FE591CE8F9D3002F1F95 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E98FE581CE8F9D3002F1F95 /* Question.swift */; };
+		4E98FE5C1CE91C27002F1F95 /* MrGGFormModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E98FE5B1CE91C27002F1F95 /* MrGGFormModelTest.swift */; };
 		C1A21C2C796F3B73AA8B6B09 /* Pods_MrGGFormUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4490240404E846883C106A9 /* Pods_MrGGFormUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		0721A621350A05707A51A1F4 /* Pods-MrGGFormUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MrGGFormUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MrGGFormUITests/Pods-MrGGFormUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4E2DC1451CE99B6000AB5841 /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		4E692AB81CE852BA0019316C /* MrGGForm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MrGGForm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E692ABB1CE852BA0019316C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E692AC01CE852BA0019316C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -51,6 +58,11 @@
 		4E692ADA1CE852BB0019316C /* MrGGFormUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MrGGFormUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E692ADE1CE852BB0019316C /* MrGGFormUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrGGFormUITests.swift; sourceTree = "<group>"; };
 		4E692AE01CE852BB0019316C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E98FE4F1CE8F2AE002F1F95 /* MrGGFormParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MrGGFormParser.swift; sourceTree = "<group>"; };
+		4E98FE511CE8F3B1002F1F95 /* FormStruct.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FormStruct.json; sourceTree = "<group>"; };
+		4E98FE541CE8F945002F1F95 /* Form.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Form.swift; sourceTree = "<group>"; };
+		4E98FE581CE8F9D3002F1F95 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		4E98FE5B1CE91C27002F1F95 /* MrGGFormModelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MrGGFormModelTest.swift; sourceTree = "<group>"; };
 		7C6DE7BC8BEA612AB5ED341D /* Pods_MrGGFormTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MrGGFormTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A20CCAA357DC8E54B0207797 /* Pods-MrGGFormTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MrGGFormTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MrGGFormTests/Pods-MrGGFormTests.release.xcconfig"; sourceTree = "<group>"; };
 		C7D3E3806E6B89E8BD2FE2E0 /* Pods_MrGGForm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MrGGForm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +127,9 @@
 			isa = PBXGroup;
 			children = (
 				4E692ABB1CE852BA0019316C /* AppDelegate.swift */,
+				4E98FE531CE8F92D002F1F95 /* DataController */,
+				4E98FE561CE8F952002F1F95 /* Model */,
+				4E98FE571CE8F95B002F1F95 /* Data */,
 				4E692ABF1CE852BA0019316C /* Main.storyboard */,
 				4E692AC51CE852BA0019316C /* Assets.xcassets */,
 				4E692AC71CE852BA0019316C /* LaunchScreen.storyboard */,
@@ -128,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				4E692AD31CE852BB0019316C /* MrGGFormTests.swift */,
+				4E98FE5B1CE91C27002F1F95 /* MrGGFormModelTest.swift */,
 				4E692AD51CE852BB0019316C /* Info.plist */,
 			);
 			path = MrGGFormTests;
@@ -140,6 +156,32 @@
 				4E692AE01CE852BB0019316C /* Info.plist */,
 			);
 			path = MrGGFormUITests;
+			sourceTree = "<group>";
+		};
+		4E98FE531CE8F92D002F1F95 /* DataController */ = {
+			isa = PBXGroup;
+			children = (
+				4E98FE4F1CE8F2AE002F1F95 /* MrGGFormParser.swift */,
+			);
+			name = DataController;
+			sourceTree = "<group>";
+		};
+		4E98FE561CE8F952002F1F95 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4E98FE541CE8F945002F1F95 /* Form.swift */,
+				4E2DC1451CE99B6000AB5841 /* Section.swift */,
+				4E98FE581CE8F9D3002F1F95 /* Question.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4E98FE571CE8F95B002F1F95 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4E98FE511CE8F3B1002F1F95 /* FormStruct.json */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 		C175192F25875BDDAD8309CB /* Pods */ = {
@@ -241,6 +283,7 @@
 				TargetAttributes = {
 					4E692AB71CE852BA0019316C = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 5T4G827M4A;
 					};
 					4E692ACE1CE852BB0019316C = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -277,6 +320,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E98FE521CE8F3B1002F1F95 /* FormStruct.json in Resources */,
 				4E692AC91CE852BA0019316C /* LaunchScreen.storyboard in Resources */,
 				4E692AC61CE852BA0019316C /* Assets.xcassets in Resources */,
 				4E692AC11CE852BA0019316C /* Main.storyboard in Resources */,
@@ -427,8 +471,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E98FE591CE8F9D3002F1F95 /* Question.swift in Sources */,
 				4E692AC41CE852BA0019316C /* MrGGForm.xcdatamodeld in Sources */,
+				4E98FE551CE8F945002F1F95 /* Form.swift in Sources */,
+				4E2DC1461CE99B6000AB5841 /* Section.swift in Sources */,
 				4E692ABC1CE852BA0019316C /* AppDelegate.swift in Sources */,
+				4E98FE501CE8F2AE002F1F95 /* MrGGFormParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +484,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E98FE5C1CE91C27002F1F95 /* MrGGFormModelTest.swift in Sources */,
 				4E692AD41CE852BB0019316C /* MrGGFormTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -573,10 +622,13 @@
 			baseConfigurationReference = F11D9EEBBBE286DFEB5DD5E0 /* Pods-MrGGForm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MrGGForm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NTUST.MrGGForm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -585,10 +637,13 @@
 			baseConfigurationReference = D0D5A0C6D9101D389DD11B1C /* Pods-MrGGForm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MrGGForm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NTUST.MrGGForm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
