@@ -1,7 +1,9 @@
 PODS:
+  - SteviaLayout (2.1.3)
   - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
+  - SteviaLayout
   - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
 
 EXTERNAL SOURCES:
@@ -14,8 +16,9 @@ CHECKOUT OPTIONS:
     :git: https://github.com/SwiftyJSON/SwiftyJSON.git
 
 SPEC CHECKSUMS:
+  SteviaLayout: 06ea561e2efae84f2862fcd5d6790148dd56fb87
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-PODFILE CHECKSUM: f91268c57ef16363e83d36183138897424d94239
+PODFILE CHECKSUM: e1243ce0d5ad4ed591591c89760aa1e0ef3ada99
 
 COCOAPODS: 1.0.0.rc.1

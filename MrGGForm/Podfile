@@ -7,6 +7,7 @@ target 'MrGGForm' do
 
   # Pods for MrGGForm
   pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
+  pod 'SteviaLayout'
 
   target 'MrGGFormTests' do
     inherit! :search_paths
