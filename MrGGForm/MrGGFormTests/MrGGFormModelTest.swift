@@ -46,6 +46,7 @@ class MrGGFormModelTest: XCTestCase {
         
         self.testModelShortAnswerByJson(ShortAnswer.build(json1)!, json: json1)
         
+        
         // Error Handle
         let json2: JSON = [
             "title": "questionTitle",
@@ -205,26 +206,45 @@ class MrGGFormModelTest: XCTestCase {
     }
     
     func testModelShortAnswerByJson(shortAnswer: ShortAnswer, json: JSON) {
+        // Import
         XCTAssertEqual(shortAnswer.id, json["id"].string)
         XCTAssertEqual(shortAnswer.title, json["title"].string)
         XCTAssertEqual(shortAnswer.type.rawValue, json["type"].string)
         XCTAssertEqual(shortAnswer.required, json["required"].bool)
         XCTAssertEqual(shortAnswer.placeholder, json["placeholder"].string)
+        
+        // Export
+        let output = shortAnswer.json()
+        
+        XCTAssertEqual(output["id"].string, json["id"].string)
+        XCTAssertEqual(output["title"].string, json["title"].string)
+        XCTAssertEqual(output["type"].string, json["type"].string)
+        XCTAssertEqual(output["required"].bool, json["required"].bool)
+        XCTAssertEqual(output["placeholder"].string, json["placeholder"].string)
     }
     
     func testModelParagraphByJson(paragraph: Paragraph, json: JSON) {
+        // Import
         XCTAssertEqual(paragraph.id, json["id"].string)
         XCTAssertEqual(paragraph.title, json["title"].string)
         XCTAssertEqual(paragraph.type.rawValue, json["type"].string)
         XCTAssertEqual(paragraph.required, json["required"].bool)
         XCTAssertEqual(paragraph.placeholder, json["placeholder"].string)
+        
+        // Export
+        let output = paragraph.json()
+        
+        XCTAssertEqual(output["id"].string, json["id"].string)
+        XCTAssertEqual(output["title"].string, json["title"].string)
+        XCTAssertEqual(output["type"].string, json["type"].string)
+        XCTAssertEqual(output["required"].bool, json["required"].bool)
+        XCTAssertEqual(output["placeholder"].string, json["placeholder"].string)
     }
     
     func testModelCheckBoxesByJson(checkBoxes: CheckBoxes, json: JSON) {
+        // Import
         XCTAssertEqual(checkBoxes.id, json["id"].string)
-        
         XCTAssertEqual(checkBoxes.title, json["title"].string)
-        
         XCTAssertEqual(checkBoxes.type.rawValue, json["type"].string)
         XCTAssertEqual(checkBoxes.required, json["required"].bool)
         for i in 0 ..< checkBoxes.values.count {
@@ -232,9 +252,23 @@ class MrGGFormModelTest: XCTestCase {
             
             XCTAssertEqual(value, json["values"].array![i].string)
         }
+        
+        // Export
+        let output = checkBoxes.json()
+        
+        XCTAssertEqual(output["id"].string, json["id"].string)
+        XCTAssertEqual(output["title"].string, json["title"].string)
+        XCTAssertEqual(output["type"].string, json["type"].string)
+        XCTAssertEqual(output["required"].bool, json["required"].bool)
+        for i in 0 ..< output["values"].arrayValue.count {
+            let value = output["values"].arrayValue[i]
+            
+            XCTAssertEqual(value.string, json["values"].array![i].string)
+        }
     }
     
     func testModelMultipleChoiceByJson(multipleChoice: MultipleChoice, json: JSON) {
+        // Import
         XCTAssertEqual(multipleChoice.id, json["id"].string)
         XCTAssertEqual(multipleChoice.title, json["title"].string)
         XCTAssertEqual(multipleChoice.type.rawValue, json["type"].string)
@@ -244,9 +278,23 @@ class MrGGFormModelTest: XCTestCase {
             
             XCTAssertEqual(value, json["values"].array![i].string)
         }
+        
+        // Export
+        let output = multipleChoice.json()
+        
+        XCTAssertEqual(output["id"].string, json["id"].string)
+        XCTAssertEqual(output["title"].string, json["title"].string)
+        XCTAssertEqual(output["type"].string, json["type"].string)
+        XCTAssertEqual(output["required"].bool, json["required"].bool)
+        for i in 0 ..< output["values"].arrayValue.count {
+            let value = output["values"].arrayValue[i]
+            
+            XCTAssertEqual(value.string, json["values"].array![i].string)
+        }
     }
     
     func testModelDropDownByJson(dropDown: DropDown, json: JSON) {
+        // Import
         XCTAssertEqual(dropDown.id, json["id"].string)
         XCTAssertEqual(dropDown.title, json["title"].string)
         XCTAssertEqual(dropDown.type.rawValue, json["type"].string)
@@ -257,15 +305,38 @@ class MrGGFormModelTest: XCTestCase {
             XCTAssertEqual(value, json["values"].array![i].string)
         }
         
+        // Export
+        let output = dropDown.json()
+        
+        XCTAssertEqual(output["id"].string, json["id"].string)
+        XCTAssertEqual(output["title"].string, json["title"].string)
+        XCTAssertEqual(output["type"].string, json["type"].string)
+        XCTAssertEqual(output["required"].bool, json["required"].bool)
+        for i in 0 ..< output["values"].arrayValue.count {
+            let value = output["values"].arrayValue[i]
+            
+            XCTAssertEqual(value.string, json["values"].array![i].string)
+        }
     }
     
     func testModelLinearScaleByJson(linearScale: LinearScale,json: JSON) {
+        // Import
         XCTAssertEqual(linearScale.id, json["id"].string)
         XCTAssertEqual(linearScale.title, json["title"].string)
         XCTAssertEqual(linearScale.type.rawValue, json["type"].string)
         XCTAssertEqual(linearScale.required, json["required"].bool)
         XCTAssertEqual(linearScale.maxValue, json["maxValue"].number)
         XCTAssertEqual(linearScale.minValue, json["minValue"].number)
+        
+        // Export
+        let output = linearScale.json()
+        
+        XCTAssertEqual(output["id"].string, json["id"].string)
+        XCTAssertEqual(output["title"].string, json["title"].string)
+        XCTAssertEqual(output["type"].string, json["type"].string)
+        XCTAssertEqual(output["required"].bool, json["required"].bool)
+        XCTAssertEqual(output["maxValue"].number, json["maxValue"].number)
+        XCTAssertEqual(output["minValue"].number, json["minValue"].number)
     }
     
     func testModelSection() {
@@ -387,6 +458,7 @@ class MrGGFormModelTest: XCTestCase {
     }
     
     func testModelSectionByJson(section: Section, json: JSON) {
+        // Import
         XCTAssertEqual(section.id, json["id"].string)
         XCTAssertEqual(section.title, json["title"].string)
         XCTAssertEqual(section.description, json["description"].string)
@@ -412,6 +484,40 @@ class MrGGFormModelTest: XCTestCase {
                 break
             case .LinearScale:
                 self.testModelLinearScaleByJson(question as! LinearScale, json: json["questions"].array![i])
+                break
+            }
+        }
+        
+        // Export
+        let output = section.json()
+        
+        XCTAssertEqual(output["id"].string, json["id"].string)
+        XCTAssertEqual(output["title"].string, json["title"].string)
+        XCTAssertEqual(output["description"].string, json["description"].string)
+        
+        for i in 0 ..< output["questions"].arrayValue.count {
+            let question = output["questions"].arrayValue[i]
+            
+            switch question["type"].stringValue {
+            case QuestionType.ShortAnswer.rawValue:
+                self.testModelShortAnswerByJson(ShortAnswer.build(question)!, json: json["questions"].array![i])
+                break
+            case QuestionType.Paragraph.rawValue:
+                self.testModelParagraphByJson(Paragraph.build(question)!, json: json["questions"].array![i])
+                break
+            case QuestionType.CheckBoxes.rawValue:
+                self.testModelCheckBoxesByJson(CheckBoxes.build(question)!, json: json["questions"].array![i])
+                break
+            case QuestionType.MultipleChoice.rawValue:
+                self.testModelMultipleChoiceByJson(MultipleChoice.build(question)!, json: json["questions"].array![i])
+                break
+            case QuestionType.DropDown.rawValue:
+                self.testModelDropDownByJson(DropDown.build(question)!, json: json["questions"].array![i])
+                break
+            case QuestionType.LinearScale.rawValue:
+                self.testModelLinearScaleByJson(LinearScale.build(question)!, json: json["questions"].array![i])
+                break
+            default:
                 break
             }
         }
@@ -484,6 +590,7 @@ class MrGGFormModelTest: XCTestCase {
     }
     
     func testModelFormByJson(form: Form, json: JSON) {
+        // Import
         XCTAssertEqual(form.id, json["id"].string)
         XCTAssertEqual(form.title, json["title"].string)
         
@@ -491,6 +598,18 @@ class MrGGFormModelTest: XCTestCase {
             let section = form.sections[i]
             
             self.testModelSectionByJson(section, json: json["sections"].array![i])
+        }
+        
+        // Export
+        let output = form.json()
+        
+        XCTAssertEqual(output["id"].string, json["id"].string)
+        XCTAssertEqual(output["title"].string, json["title"].string)
+        
+        for i in 0 ..< output["sections"].arrayValue.count {
+            let section = output["sections"].arrayValue[i]
+            
+            self.testModelSectionByJson(Section.build(section)!, json: json["sections"].array![i])
         }
     }
     

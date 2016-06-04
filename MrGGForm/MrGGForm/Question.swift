@@ -9,7 +9,7 @@
 import Foundation
 import SwiftyJSON
 
-enum QuestionType:String {
+enum QuestionType: String {
     case ShortAnswer = "shortAnswer"
     case Paragraph = "paragraph"
     case CheckBoxes = "checkBoxes"
@@ -54,6 +54,16 @@ class ShortAnswer: Question {
             return nil
         }
     }
+    
+    func json() -> JSON {
+        return JSON([
+            "id": id,
+            "title": title,
+            "type": type.rawValue,
+            "required": required.boolValue,
+            "placeholder": placeholder
+            ])
+    }
 }
 
 class Paragraph: Question {
@@ -77,6 +87,16 @@ class Paragraph: Question {
             debugPrint(json)
             return nil
         }
+    }
+    
+    func json() -> JSON {
+        return JSON([
+            "id": id,
+            "title": title,
+            "type": type.rawValue,
+            "required": required.boolValue,
+            "placeholder": placeholder
+            ])
     }
 }
 
@@ -103,6 +123,16 @@ class CheckBoxes: Question {
             return nil
         }
     }
+    
+    func json() -> JSON {
+        return JSON([
+            "id": id,
+            "title": title,
+            "type": type.rawValue,
+            "required": required.boolValue,
+            "values": values
+            ])
+    }
 }
 
 class MultipleChoice: Question {
@@ -128,6 +158,16 @@ class MultipleChoice: Question {
             return nil
         }
     }
+    
+    func json() -> JSON {
+        return JSON([
+            "id": id,
+            "title": title,
+            "type": type.rawValue,
+            "required": required.boolValue,
+            "values": values
+            ])
+    }
 }
 
 class DropDown: Question {
@@ -152,6 +192,16 @@ class DropDown: Question {
             debugPrint(json)
             return nil
         }
+    }
+    
+    func json() -> JSON {
+        return JSON([
+            "id": id,
+            "title": title,
+            "type": type.rawValue,
+            "required": required.boolValue,
+            "values": values
+            ])
     }
 }
 
@@ -179,5 +229,16 @@ class LinearScale: Question {
             debugPrint(json)
             return nil
         }
+    }
+    
+    func json() -> JSON {
+        return JSON([
+            "id": id,
+            "title": title,
+            "type": type.rawValue,
+            "required": required.boolValue,
+            "maxValue": maxValue,
+            "minValue": minValue
+            ])
     }
 }

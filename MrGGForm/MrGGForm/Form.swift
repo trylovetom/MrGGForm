@@ -42,4 +42,19 @@ class Form {
             return nil
         }
     }
+    
+    func json() -> JSON {
+        var json = JSON([
+            "id": id,
+            "title": title
+            ])
+        var sectionsJson = [JSON]()
+        
+        for section in sections {
+            sectionsJson.append(section.json())
+        }
+        json["sections"] = JSON(sectionsJson)
+        
+        return json
+    }
 }

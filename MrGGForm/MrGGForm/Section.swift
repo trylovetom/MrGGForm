@@ -85,4 +85,34 @@ class Section {
         return nil
     }
     
+    func json() -> JSON {
+        var questionsJson = [JSON]()
+        
+        for question in questions {
+            switch question.type {
+            case QuestionType.ShortAnswer:
+                questionsJson.append((question as! ShortAnswer).json())
+                break
+            case QuestionType.Paragraph:
+                questionsJson.append((question as! Paragraph).json())
+            case QuestionType.CheckBoxes:
+                questionsJson.append((question as! CheckBoxes).json())
+            case QuestionType.MultipleChoice:
+                questionsJson.append((question as! MultipleChoice).json())
+            case QuestionType.DropDown:
+                questionsJson.append((question as! DropDown).json())
+            case QuestionType.LinearScale:
+                questionsJson.append((question as! LinearScale).json())
+            }
+        }
+        
+        var json = JSON([
+            "id": id,
+            "title": title,
+            "description": description,
+            ])
+        json["questions"] = JSON(questionsJson)
+        
+        return json
+    }
 }
