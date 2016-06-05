@@ -21,12 +21,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if let path = NSBundle.mainBundle().pathForResource("FormStruct", ofType: "json") {
             if let jsonData = NSData(contentsOfFile: path) {
                 if let form = Form.build(JSON(data: jsonData)) {
-                    let formViewController = FormViewController(form: form)
-                    let layout = UICollectionViewFlowLayout()
-                    layout.itemSize = CGSize(width: 50, height: 50);
-//                    let navigationController = UINavigationController(rootViewController: FormCollectionViewController(collectionViewLayout: layout))
+                    let formViewController = SectionTableViewController(section: form.sections[0])
+                    let navigationController = UINavigationController(rootViewController: formViewController)
                     let tabBarViewController = UITabBarController()
-//                    tabBarViewController.viewControllers = [navigationController]
+                    tabBarViewController.viewControllers = [navigationController]
                     let mainViewController = tabBarViewController
                     
                     window = UIWindow(frame: UIScreen.mainScreen().bounds)

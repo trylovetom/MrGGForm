@@ -9,13 +9,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MrGGForm/FormViewController.swift"
-            timestampString = "485614099.541452"
+            filePath = "MrGGForm/SectionTableViewController.swift"
+            timestampString = "486823776.604324"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "tableView(_:cellForRowAtIndexPath:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,13 +25,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MrGGForm/FormViewController.swift"
-            timestampString = "485676617.828892"
+            filePath = "MrGGForm/CheckBoxesTableViewCell.swift"
+            timestampString = "486831160.160157"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
-            landmarkName = "render()"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "drawRect(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -41,61 +41,14 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MrGGFormTests/MrGGFormModelTest.swift"
-            timestampString = "486753334.539941"
+            filePath = "MrGGForm/LinearScaleTableViewCell.swift"
+            timestampString = "486836141.750968"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "266"
-            endingLineNumber = "266"
-            landmarkName = "testModelCheckBoxesByJson(_:json:)"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "drawRect(_:)"
             landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MrGGFormTests.MrGGFormModelTest.testModelCheckBoxesByJson (MrGGForm.CheckBoxes, json : SwiftyJSON.JSON) -&gt; ()"
-                  moduleName = "MrGGFormTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zhangziyan/Documents/Program%20Languages/App/iOS/Swift/InClass/MrGGForm/MrGGForm/MrGGFormTests/MrGGFormModelTest.swift"
-                  timestampString = "486753342.78378"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "266"
-                  endingLineNumber = "266"
-                  offsetFromSymbolStart = "9671">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MrGGFormTests.MrGGFormModelTest.(testModelCheckBoxesByJson (MrGGForm.CheckBoxes, json : SwiftyJSON.JSON) -&gt; ()).(implicit closure #19)"
-                  moduleName = "MrGGFormTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zhangziyan/Documents/Program%20Languages/App/iOS/Swift/InClass/MrGGForm/MrGGForm/MrGGFormTests/MrGGFormModelTest.swift"
-                  timestampString = "486753342.785516"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "266"
-                  endingLineNumber = "266"
-                  offsetFromSymbolStart = "94">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MrGGFormTests.MrGGFormModelTest.(testModelCheckBoxesByJson (MrGGForm.CheckBoxes, json : SwiftyJSON.JSON) -&gt; ()).(implicit closure #20)"
-                  moduleName = "MrGGFormTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zhangziyan/Documents/Program%20Languages/App/iOS/Swift/InClass/MrGGForm/MrGGForm/MrGGFormTests/MrGGFormModelTest.swift"
-                  timestampString = "486753342.785748"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "266"
-                  endingLineNumber = "266"
-                  offsetFromSymbolStart = "105">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

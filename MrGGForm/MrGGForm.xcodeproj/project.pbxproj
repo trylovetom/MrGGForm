@@ -17,11 +17,18 @@
 		4E692AC91CE852BA0019316C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E692AC71CE852BA0019316C /* LaunchScreen.storyboard */; };
 		4E692AD41CE852BB0019316C /* MrGGFormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E692AD31CE852BB0019316C /* MrGGFormTests.swift */; };
 		4E692ADF1CE852BB0019316C /* MrGGFormUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E692ADE1CE852BB0019316C /* MrGGFormUITests.swift */; };
+		4E9689281D043124003F44BE /* FormDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9689271D043124003F44BE /* FormDataController.swift */; };
+		4E96892A1D043143003F44BE /* SectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9689291D043143003F44BE /* SectionTableViewController.swift */; };
+		4E96892E1D0436A4003F44BE /* ShortAnswerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E96892D1D0436A4003F44BE /* ShortAnswerTableViewCell.swift */; };
+		4E9689301D045938003F44BE /* ParagraphTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E96892F1D045938003F44BE /* ParagraphTableViewCell.swift */; };
+		4E9689321D04594A003F44BE /* CheckBoxesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9689311D04594A003F44BE /* CheckBoxesTableViewCell.swift */; };
+		4E9689341D045969003F44BE /* MultipleChoiceTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9689331D045969003F44BE /* MultipleChoiceTableView.swift */; };
+		4E9689361D04597A003F44BE /* DropDownTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9689351D04597A003F44BE /* DropDownTableViewCell.swift */; };
+		4E9689381D045987003F44BE /* LinearScaleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9689371D045987003F44BE /* LinearScaleTableViewCell.swift */; };
 		4E98FE521CE8F3B1002F1F95 /* FormStruct.json in Resources */ = {isa = PBXBuildFile; fileRef = 4E98FE511CE8F3B1002F1F95 /* FormStruct.json */; };
 		4E98FE551CE8F945002F1F95 /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E98FE541CE8F945002F1F95 /* Form.swift */; };
 		4E98FE591CE8F9D3002F1F95 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E98FE581CE8F9D3002F1F95 /* Question.swift */; };
 		4E98FE5C1CE91C27002F1F95 /* MrGGFormModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E98FE5B1CE91C27002F1F95 /* MrGGFormModelTest.swift */; };
-		4EE975EB1CEC60A0008F5293 /* FormDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE975EA1CEC60A0008F5293 /* FormDataController.swift */; };
 		C1A21C2C796F3B73AA8B6B09 /* Pods_MrGGFormUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4490240404E846883C106A9 /* Pods_MrGGFormUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,11 +65,18 @@
 		4E692ADA1CE852BB0019316C /* MrGGFormUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MrGGFormUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E692ADE1CE852BB0019316C /* MrGGFormUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrGGFormUITests.swift; sourceTree = "<group>"; };
 		4E692AE01CE852BB0019316C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E9689271D043124003F44BE /* FormDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormDataController.swift; sourceTree = "<group>"; };
+		4E9689291D043143003F44BE /* SectionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionTableViewController.swift; sourceTree = "<group>"; };
+		4E96892D1D0436A4003F44BE /* ShortAnswerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShortAnswerTableViewCell.swift; sourceTree = "<group>"; };
+		4E96892F1D045938003F44BE /* ParagraphTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParagraphTableViewCell.swift; sourceTree = "<group>"; };
+		4E9689311D04594A003F44BE /* CheckBoxesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBoxesTableViewCell.swift; sourceTree = "<group>"; };
+		4E9689331D045969003F44BE /* MultipleChoiceTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleChoiceTableView.swift; sourceTree = "<group>"; };
+		4E9689351D04597A003F44BE /* DropDownTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownTableViewCell.swift; sourceTree = "<group>"; };
+		4E9689371D045987003F44BE /* LinearScaleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinearScaleTableViewCell.swift; sourceTree = "<group>"; };
 		4E98FE511CE8F3B1002F1F95 /* FormStruct.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FormStruct.json; sourceTree = "<group>"; };
 		4E98FE541CE8F945002F1F95 /* Form.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Form.swift; sourceTree = "<group>"; };
 		4E98FE581CE8F9D3002F1F95 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		4E98FE5B1CE91C27002F1F95 /* MrGGFormModelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MrGGFormModelTest.swift; sourceTree = "<group>"; };
-		4EE975EA1CEC60A0008F5293 /* FormDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormDataController.swift; sourceTree = "<group>"; };
 		7C6DE7BC8BEA612AB5ED341D /* Pods_MrGGFormTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MrGGFormTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A20CCAA357DC8E54B0207797 /* Pods-MrGGFormTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MrGGFormTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MrGGFormTests/Pods-MrGGFormTests.release.xcconfig"; sourceTree = "<group>"; };
 		C7D3E3806E6B89E8BD2FE2E0 /* Pods_MrGGForm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MrGGForm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,6 +118,12 @@
 		4E00DF6E1CED6B1E00E387E5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4E96892D1D0436A4003F44BE /* ShortAnswerTableViewCell.swift */,
+				4E96892F1D045938003F44BE /* ParagraphTableViewCell.swift */,
+				4E9689311D04594A003F44BE /* CheckBoxesTableViewCell.swift */,
+				4E9689331D045969003F44BE /* MultipleChoiceTableView.swift */,
+				4E9689351D04597A003F44BE /* DropDownTableViewCell.swift */,
+				4E9689371D045987003F44BE /* LinearScaleTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -170,7 +190,7 @@
 		4E98FE531CE8F92D002F1F95 /* DataController */ = {
 			isa = PBXGroup;
 			children = (
-				4EE975EA1CEC60A0008F5293 /* FormDataController.swift */,
+				4E9689271D043124003F44BE /* FormDataController.swift */,
 			);
 			name = DataController;
 			sourceTree = "<group>";
@@ -196,6 +216,7 @@
 		4EE975E91CEC5FB8008F5293 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				4E9689291D043143003F44BE /* SectionTableViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -488,10 +509,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E98FE591CE8F9D3002F1F95 /* Question.swift in Sources */,
-				4EE975EB1CEC60A0008F5293 /* FormDataController.swift in Sources */,
+				4E9689341D045969003F44BE /* MultipleChoiceTableView.swift in Sources */,
 				4E692AC41CE852BA0019316C /* MrGGForm.xcdatamodeld in Sources */,
 				4E98FE551CE8F945002F1F95 /* Form.swift in Sources */,
+				4E9689301D045938003F44BE /* ParagraphTableViewCell.swift in Sources */,
+				4E9689321D04594A003F44BE /* CheckBoxesTableViewCell.swift in Sources */,
+				4E9689281D043124003F44BE /* FormDataController.swift in Sources */,
+				4E96892E1D0436A4003F44BE /* ShortAnswerTableViewCell.swift in Sources */,
+				4E9689381D045987003F44BE /* LinearScaleTableViewCell.swift in Sources */,
+				4E96892A1D043143003F44BE /* SectionTableViewController.swift in Sources */,
 				4E2DC1461CE99B6000AB5841 /* Section.swift in Sources */,
+				4E9689361D04597A003F44BE /* DropDownTableViewCell.swift in Sources */,
 				4E692ABC1CE852BA0019316C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
