@@ -16,6 +16,8 @@ enum QuestionType: String {
     case MultipleChoice = "multipleChoice"
     case DropDown = "dropDown"
     case LinearScale = "linearScale"
+    
+    static var count: Int { return LinearScale.hashValue + 1 }
 }
 
 class Question {

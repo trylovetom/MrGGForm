@@ -48,6 +48,10 @@ class MultipleChoiceTableView: UITableViewCell {
         for i in 0 ..< buttons.count {
             currentButton = buttons[i]
             
+            currentButton.layer.borderWidth = 1.0
+            currentButton.layer.cornerRadius = 3.0
+            currentButton.layer.masksToBounds = true
+            
             if i == 0 { // First
                 layout(
                     titleLabel,

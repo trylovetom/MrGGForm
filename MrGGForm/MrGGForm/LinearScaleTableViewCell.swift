@@ -37,7 +37,6 @@ class LinearScaleTableViewCell: UITableViewCell {
     // MARK: - Render
     override func drawRect(rect: CGRect) {
         sv(titleLabel, slider, minLabel, maxLabel, currentLabel)
-        sv(view)
         layout(
             8,
             |-titleLabel-currentLabel-|,

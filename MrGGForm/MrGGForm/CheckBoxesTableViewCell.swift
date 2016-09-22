@@ -9,12 +9,16 @@
 import UIKit
 import SteviaLayout
 
+protocol CheckBoxesProtocol {
+    func checkBoxesDidEndEditing(id: String, content: String)
+}
+
 class CheckBoxesTableViewCell: UITableViewCell {
     let titleLabel = UILabel()
     var switches = [UISwitch]()
     var switchesLabel = [UILabel]()
     let checkBoxes: CheckBoxes
-    var values = [Int]()
+    var delegate: CheckBoxesProtocol?
     
     // MARK: - Initializer
     init(checkBoxes: CheckBoxes) {
@@ -86,11 +90,14 @@ class CheckBoxesTableViewCell: UITableViewCell {
     
     // MARK: - Action
     func switchAction(sender: UISwitch) {
-        values.removeAll()
-        for currentSwitch in switches {
+        var string = ""
+        
+        for (i, currentSwitch) in switches.enumerate() {
             if currentSwitch.on {
-                values.append(currentSwitch.tag)
+                string = string.stringByAppendingString(checkBoxes.values[i] + "\n")
             }
         }
+        
+        delegate?.checkBoxesDidEndEditing(checkBoxes.id, content: string)
     }
 }

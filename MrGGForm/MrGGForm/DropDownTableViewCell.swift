@@ -9,11 +9,16 @@
 import UIKit
 import SteviaLayout
 
+protocol DropDownTableViewCellProtocol {
+    func dropDownDidEndEditing(id: String, content: String)
+}
+
 class DropDownTableViewCell: UITableViewCell, UIPickerViewDelegate, UIPickerViewDataSource {
     let titleLabel = UILabel()
     let pickerView = UIPickerView()
     let value = -1
     let dropDown: DropDown
+    var delegate: DropDownTableViewCellProtocol?
     
     // MARK: - Initializer
     init(dropDown: DropDown) {
@@ -37,11 +42,16 @@ class DropDownTableViewCell: UITableViewCell, UIPickerViewDelegate, UIPickerView
             |-50-pickerView-50-|,
             8
         )
+        delegate?.dropDownDidEndEditing(dropDown.id, content: dropDown.values[0])
     }
     
     // MARM: - UIPickerViewDelegate
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return dropDown.values[row]
+    }
+    
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        delegate?.dropDownDidEndEditing(dropDown.id, content: dropDown.values[row])
     }
     
     // MARM: -  UIPickerViewDataSource

@@ -18,14 +18,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        if let path = NSBundle.mainBundle().pathForResource("FormStruct", ofType: "json") {
-            if let jsonData = NSData(contentsOfFile: path) {
-                if let form = Form.build(JSON(data: jsonData)) {
-                    let formViewController = SectionTableViewController(section: form.sections[0])
-                    let navigationController = UINavigationController(rootViewController: formViewController)
-                    let tabBarViewController = UITabBarController()
-                    tabBarViewController.viewControllers = [navigationController]
-                    let mainViewController = tabBarViewController
+        if let path = NSBundle.mainBundle().pathForResource("SectionStruct", ofType: "json") {
+            let fileManager = NSFileManager.defaultManager()
+            let documents = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0]
+            let filePath = documents.stringByAppendingString("/SectionStruct.json")
+            let targetPath: String
+            
+            if fileManager.fileExistsAtPath(filePath) {
+                targetPath = filePath
+                print("FILE AVAILABLE")
+            } else {
+                targetPath = path
+                print("FILE NOT AVAILABLE")
+            }
+            if let jsonData = NSData(contentsOfFile: targetPath) {
+                if let section = Section.build(JSON(data: jsonData)) {
+//                    let sectionEditTableViewController = SectionEditTableViewController(section: section)
+//                    let navigationController = UINavigationController(rootViewController: sectionEditTableViewController)
+                    
+                    let formTableViewController = FormTableViewController()
+                    let navigationController = UINavigationController(rootViewController: formTableViewController)
+                    let mainViewController = navigationController
                     
                     window = UIWindow(frame: UIScreen.mainScreen().bounds)
                     window?.rootViewController = mainViewController

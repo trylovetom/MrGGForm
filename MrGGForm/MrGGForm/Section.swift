@@ -11,9 +11,9 @@ import SwiftyJSON
 
 class Section {
     let id: String
-    let title: String
+    var title: String
     let description: String
-    let questions: [Question]
+    var questions: [Question]
     
     init(id: String, title: String, description: String, questions: [Question]) {
         self.id = id

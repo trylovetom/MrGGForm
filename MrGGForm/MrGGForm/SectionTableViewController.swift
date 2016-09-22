@@ -7,13 +7,22 @@
 //
 
 import UIKit
+import SwiftyJSON
 
-class SectionTableViewController: UITableViewController {
-    let section: Section
+protocol SectionTableViewControllerProtocol {
+    func sectionDidFinished(replyJson: JSON)
+}
+
+class SectionTableViewController: UITableViewController, ShortAnswerTableViewCellProtocol, ParagraphTableViewCellProtocol, DropDownTableViewCellProtocol {
+    var section: Section
+    var saveButton: UIBarButtonItem?
+    var delegate: SectionTableViewControllerProtocol?
+    var reply = Dictionary<String, AnyObject>()
     
     // MARK: - Initializer
     init(section: Section) {
         self.section = section
+        self.saveButton = nil
         super.init(style: .Plain)
     }
     
@@ -21,6 +30,7 @@ class SectionTableViewController: UITableViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,7 +38,9 @@ class SectionTableViewController: UITableViewController {
         // self.clearsSelectionOnViewWillAppear = false
         
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        self.saveButton = UIBarButtonItem(barButtonSystemItem: .Save, target: self, action: #selector(SectionTableViewController.saveAction))
+        self.navigationItem.leftBarButtonItem = self.saveButton
+        self.title = section.title
     }
     
     override func didReceiveMemoryWarning() {
@@ -52,34 +64,36 @@ class SectionTableViewController: UITableViewController {
         let question = self.section.questions[indexPath.item]
         var cell: UITableViewCell?
         
-        switch question.type {
-        case .ShortAnswer:
-            cell = tableView.dequeueReusableCellWithIdentifier(QuestionType.ShortAnswer.rawValue)
-            break
-        case .Paragraph:
-            cell = tableView.dequeueReusableCellWithIdentifier(QuestionType.Paragraph.rawValue)
-            break
-        case .CheckBoxes:
-            cell = tableView.dequeueReusableCellWithIdentifier(QuestionType.CheckBoxes.rawValue)
-            break
-        case .MultipleChoice:
-            cell = tableView.dequeueReusableCellWithIdentifier(QuestionType.MultipleChoice.rawValue)
-            break
-        case .DropDown:
-            cell = tableView.dequeueReusableCellWithIdentifier(QuestionType.DropDown.rawValue)
-            break
-        case .LinearScale:
-            cell = tableView.dequeueReusableCellWithIdentifier(QuestionType.LinearScale.rawValue)
-            break
-        }
+//        switch question.type {
+//        case .ShortAnswer:
+//            cell = tableView.dequeueReusableCellWithIdentifier(QuestionType.ShortAnswer.rawValue)
+//            break
+//        case .Paragraph:
+//            cell = tableView.dequeueReusableCellWithIdentifier(QuestionType.Paragraph.rawValue)
+//            break
+//        case .CheckBoxes:
+//            cell = tableView.dequeueReusableCellWithIdentifier(QuestionType.CheckBoxes.rawValue)
+//            break
+//        case .MultipleChoice:
+//            cell = tableView.dequeueReusableCellWithIdentifier(QuestionType.MultipleChoice.rawValue)
+//            break
+//        case .DropDown:
+//            cell = tableView.dequeueReusableCellWithIdentifier(QuestionType.DropDown.rawValue)
+//            break
+//        case .LinearScale:
+//            cell = tableView.dequeueReusableCellWithIdentifier(QuestionType.LinearScale.rawValue)
+//            break
+//        }
         
         if cell == nil {
             switch question.type {
             case .ShortAnswer:
                 cell = ShortAnswerTableViewCell(shortAnswer: question as! ShortAnswer)
+                (cell as! ShortAnswerTableViewCell).delegate = self
                 break
             case .Paragraph:
                 cell = ParagraphTableViewCell(paragraph: question as! Paragraph)
+                (cell as! ParagraphTableViewCell).delegate = self
                 break
             case .CheckBoxes:
                 cell = CheckBoxesTableViewCell(checkBoxes: question as! CheckBoxes)
@@ -89,6 +103,7 @@ class SectionTableViewController: UITableViewController {
                 break
             case .DropDown:
                 cell = DropDownTableViewCell(dropDown: question as! DropDown)
+                (cell as! DropDownTableViewCell).delegate = self
                 break
             case .LinearScale:
                 cell = LinearScaleTableViewCell(linearScale: question as! LinearScale)
@@ -100,41 +115,6 @@ class SectionTableViewController: UITableViewController {
     }
     
     /*
-     // Override to support conditional editing of the table view.
-     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-     // Return false if you do not want the specified item to be editable.
-     return true
-     }
-     */
-    
-    /*
-     // Override to support editing the table view.
-     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-     if editingStyle == .Delete {
-     // Delete the row from the data source
-     tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-     } else if editingStyle == .Insert {
-     // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-     }
-     }
-     */
-    
-    /*
-     // Override to support rearranging the table view.
-     override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-     
-     }
-     */
-    
-    /*
-     // Override to support conditional rearranging of the table view.
-     override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-     // Return false if you do not want the item to be re-orderable.
-     return true
-     }
-     */
-    
-    /*
      // MARK: - Navigation
      
      // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -143,6 +123,7 @@ class SectionTableViewController: UITableViewController {
      // Pass the selected object to the new view controller.
      }
      */
+    
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         let question = self.section.questions[indexPath.item]
         
@@ -159,4 +140,26 @@ class SectionTableViewController: UITableViewController {
             return 80
         }
     }
+    
+    // MARK: - Reply
+    func shortAnswerDidEndEditing(id: String, content: String) {
+        reply[id] = content
+    }
+    
+    func paragraphDidEndEditing(id: String, content: [String]) {
+        reply[id] = content
+    }
+    
+    func dropDownDidEndEditing(id: String, content: String) {
+        reply[id] = content
+    }
+    
+    // MARK: - Button Action
+    
+    func saveAction() {
+        delegate?.sectionDidFinished(JSON(reply))
+        self.navigationController?.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    
 }

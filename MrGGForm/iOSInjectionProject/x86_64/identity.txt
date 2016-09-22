@@ -1,0 +1,2 @@
+/Users/zhangziyan/Library/Developer/Xcode/DerivedData/MrGGForm-dtewknezmvfyggeruvztwietmsvc/Build/Products/Debug-iphonesimulator/MrGGForm.app
+iPhone Developer

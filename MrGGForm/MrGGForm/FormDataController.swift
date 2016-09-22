@@ -9,19 +9,44 @@
 import Foundation
 import SwiftyJSON
 
-func getJsonFormByFile() -> JSON? {
-    if let path = NSBundle.mainBundle().pathForResource("FormStruct", ofType: "json") {
-        if let jsonData = NSData(contentsOfFile: path) {
-            return JSON(data: jsonData)
-        }
-    }
-    return nil
-}
-
 class FormDataController {
-    var form: Form
+    var formArray: [String]
     
     init() {
-        self.form = Form.build(getJsonFormByFile()!)!
+        let formData = NSUserDefaults.standardUserDefaults().objectForKey("form") as? NSData
+        
+        if let formData = formData {
+            let formArray = NSKeyedUnarchiver.unarchiveObjectWithData(formData) as? [String]
+            
+            if let formArray = formArray {
+                self.formArray = formArray
+            } else {
+                self.formArray = [String]()
+            }
+        } else {
+            self.formArray = [String]()
+        }
+    }
+    
+    func save() {
+        let formName = NSKeyedArchiver.archivedDataWithRootObject(formArray)
+        
+        NSUserDefaults.standardUserDefaults().setObject(formName, forKey: "form")
+    }
+    
+    func load() {
+        let formData = NSUserDefaults.standardUserDefaults().objectForKey("form") as? NSData
+        
+        if let formData = formData {
+            let formArray = NSKeyedUnarchiver.unarchiveObjectWithData(formData) as? [String]
+            
+            if let formArray = formArray {
+                self.formArray = formArray
+            } else {
+                self.formArray = [String]()
+            }
+        } else {
+            self.formArray = [String]()
+        }
     }
 }
